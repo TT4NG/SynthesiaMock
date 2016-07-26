@@ -1,6 +1,7 @@
 <!DOCTYPE Html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="new.css">
 <style>
 ul {
     list-style-type: none;
@@ -26,7 +27,32 @@ background-color: #111;
 
 .active{
 	background-color: #4CAF50;
-}	
+}
+.featureBox {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.featureBox {
+    background: #d4e1ec;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    width: 303px;
+    height: 108px;
+    margin-bottom: 20px;
+    padding-left: 104px;
+    padding-right: 18px;
+    padding-top: 12px;
+}
+
+.featureTitle {
+    font-size: 24px;
+    color: #017ab4;
+}
+element.style {
+    background-image: url('//dfl13enm25j07.cloudfront.net/images/features.png');
+    background-position: 5px 0px;
+}
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </script>
@@ -36,20 +62,17 @@ background-color: #111;
    <meta name="Synthesia" content="Piano synth" />
      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet "crossorigin="
    anonymous ">    
-   <link rel="stylesheet" type="text/css" href="styles.css">    
+   <link rel="stylesheet" type="text/css" href="styles.css">  
+	<link rel="icon" href="headerIcon.png">   
 </head>
+<div id="centerWrapper">
 <body>
 <div class="container">
 <div class="jumbotron">  
-        <h1><img src="headerIcon.png" alt="headerIcon" title="Synthesia" class="img-responsive">Synthesia</h1>
+        <h2><img src="headerIcon.png" alt="headerIcon" title="Synthesia" class="img-responsive"> Synthesia </h2>
         <p class="lead ">A fun way to learn piano.</p>
-</div>
- 
-<div class="row">
-  <div class="col-sm-12">
-<hr>
-<center>
-</div>
+		
+</iframe>
 </div>
 <ul>
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Index.html">Home</a></li>
@@ -57,14 +80,40 @@ background-color: #111;
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Download.html">Download</a></li>
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Keyboards.html">Keyboards</a></li>
 </ul>
+ 
+<div class="row">
+  <div class="col-sm-12">
+<hr>
+<center>
+</div>
+</div>
 <div class="row">
 <div class="col-sm-4">
           <h4>About Synthesia</h4>
-          <p>Synthesia is a piano connected videogame that tracks notes as symbols akin to guit hero. This helps new and experienced players to hone their piano skills with real application!</p>
+          <p>Synthesia is a piano connected videogame that tracks notes as symbols akin to guitar hero. This helps new and experienced players to hone their piano skills with real application!</p>
 		 
 		  
 </div>
+<div class="col-sm8">
+		<h4>Video</h4>
+		<iframe width="480" height="360" src="https://www.youtube.com/embed/sDIkjYKIsVg" frameborder="0" allowfullscreen></iframe>
 </div>
+<div style="padding-top: 65px">
+<div class="featureBox readable serifFont" style="background-image: url(features.png); background-position: 5px 0px;">
+	<span class="featureTitle">Play at Your Own Speed</span>
+	<br>
+	"In melody practice, Synthesia waits for you to play the correct note before moving on."
+	</div>
+<div class="featureBox readable serifFont" style="background-image: url(features.png); background-position: 5px -121px;">
+	<span class="featureTitle">Play at Your Own Speed</span>
+	<br>
+	"In melody practice, Synthesia waits for you to play the correct note before moving on."
+	</div>
+<div class="featureBox readable serifFont" style="background-image: url(features.png); background-position: 5px -242px;">
+	<span class="featureTitle">Play at Your Own Speed</span>
+	<br>
+	"In melody practice, Synthesia waits for you to play the correct note before moving on."
+	</div>
 
  
 </div>

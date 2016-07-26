@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -26,6 +27,27 @@ background-color: #111;
 
 .active{
 	background-color: #4CAF50;
+}
+.d-easy {
+    background-color: #dff0d8;
+    color: #6a8f5a;
+    border: 1px solid rgba(129, 174, 110, 0.5);
+}
+.d-hard {
+    background-color: #f2dede;
+    color: #ad5555;
+    border: 1px solid rgba(173, 85, 85, 0.5);
+}
+.d-med {
+    background-color: #ffeeba;
+    color: #b48800;
+    border: 1px solid rgba(189, 150, 31, 0.5);
+}
+.difficulty {
+    border-radius: 4px;
+    padding: 1px 2px;
+    font-size: 7pt;
+    margin: 1px;
 }	
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -36,7 +58,8 @@ background-color: #111;
    <meta name="Synthesia" content="Piano synth" />
      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet "crossorigin="
    anonymous ">    
-   <link rel="stylesheet" type="text/css" href="styles.css">    
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="icon" href="headerIcon.png">
 </head>
 <body>
 <div class="container">
@@ -44,19 +67,136 @@ background-color: #111;
         <h1><img src="headerIcon.png" alt="headerIcon" title="Synthesia" class="img-responsive">Songs</h1>
         <p class="lead ">Song list for all types</p>
 </div>
- 
-<div class="row">
-  <div class="col-sm-12">
-<hr>
-<center>
-</div>
-</div>
-<ul>
+ <ul>
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Index.html">Home</a></li>
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Songs.html">Songs</a></li>
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Download.html">Download</a></li>
   <li><a href="C:/Users/T4NG1/Desktop/SynthesiaSite/Keyboards.html">Keyboards</a></li>
 </ul>
+<div id="h1WithLinks" style="background-color:rbg(212,225,236); margin: 40px 0 20px; padding: 10px;">
+	<span class="serifFont" style="font-size: 24px; color:#017ab4;">Music Store</span>
+	</div>
+<table id="songList" class="table songList dataTable" style="width:930px; min-width: 930px; margin: 0 auto;">
+	<thread>
+		<tr role="row">
+			<th class="sorting" role="columnheader" tabindex="0" aria-controls="songList" rowspan="1" colspan="1" aria-label="Song or Bundle: activate to sort column ascending" style="width: 318px;">Song or Bundle</th>
+			
+			<th class="sorting" role="columnheader" tabindex="0" aria-controls="songList" rowspan="1" colspan="1" aria-label="Song or Bundle: activate to sort column ascending" style="width: 342px;">Artist</th>
+			
+			<th style="width: 80px;" class="sorting" role="columnheader" tabindex="0" aria-controls="songList" rowspan="1" colspan="1" aria-label="Difficulty: activate to sort column ascending">Difficulty</th>
+			
+			<th style="width: 50px; text-align: right;" class="sorting" role="columnheader" tabindex="0" aria-controls="songList" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th>
+		</tr>
+	</thread>
+<tbody role="alert" aria-live="polite" aria-relevant="all">
+	<tr style="background-color: #e4eef7" class="odd">
+		<td class=" ">
+			<span style="display:none;">
+			"Test"
+			</span>
+			<span class="readable serifFont">
+				<a href="/store/Song/110">Best of Motzart</a>
+			</span>
+		</td>
+		<td class="readable serifFont">Motzart</td>
+		<td style class=" ">
+			<span title="80"></span>
+			<span title="Medium arrangement" class="difficulty d-med">M</span>
+			<span title="Hard arrangement" class="difficulty d-hard">H</span>
+		</td>
+		<td style="text-align:right;" class=" ">
+			<span title="299"></span>2.99
+			</td>
+		
+	</tr>
+		<tr style class="odd">
+		<td class=" ">
+			<span style="display:none;">
+			"Test"
+			</span>
+			<span class="readable serifFont">
+				<a href="/store/Song/110">Beethoven Bundle</a>
+			</span>
+		</td>
+		<td class="readable serifFont">Beethoven</td>
+		<td style class=" ">
+			<span title="80"></span>
+			<span title="Hard arrangement" class="difficulty d-hard">H</span>
+			<span title="Hard arrangement" class="difficulty d-hard">H</span>
+		</td>
+		<td style="text-align:right;" class=" ">
+			<span title="299"></span>10.99
+			</td>
+		
+	</tr>
+		<tr style class="even">
+		<td class=" ">
+			<span style="display:none;">
+			"Test"
+			</span>
+			<span class="readable serifFont">
+				<a href="/store/Song/110">Bach Collection</a>
+			</span>
+		</td>
+		<td class="readable serifFont">Bach</td>
+		<td style class=" ">
+			<span title="80"></span>
+			<span title="Easy arrangement" class="difficulty d-easy">E</span>
+			<span title="Easy arrangement" class="difficulty d-easy">E</span>
+		</td>
+		<td style="text-align:right;" class=" ">
+			<span title="299"></span>5.99
+			</td>
+		
+	</tr>
+		</tr>
+		<tr style class="odd">
+		<td class=" ">
+			<span style="display:none;">
+			"Test"
+			</span>
+			<span class="readable serifFont">
+				<a href="/store/Song/110">Anime Collection</a>
+			</span>
+		</td>
+		<td class="readable serifFont">Anime</td>
+		<td style class=" ">
+			<span title="80"></span>
+			<span title="Medium arrangement" class="difficulty d-med">M</span>
+			<span title="Medium arrangement" class="difficulty d-med">M</span>
+		</td>
+		<td style="text-align:right;" class=" ">
+			<span title="299"></span>6.99
+			</td>
+		
+	</tr>
+		</tr>
+		<tr style class="even">
+		<td class=" ">
+			<span style="display:none;">
+			"Test"
+			</span>
+			<span class="readable serifFont">
+				<a href="/store/Song/110">Final Fantasy Collection</a>
+			</span>
+		</td>
+		<td class="readable serifFont">Nobuo Uematsu</td>
+		<td style class=" ">
+			<span title="80"></span>
+			<span title="Hard arrangement" class="difficulty d-hard">H</span>
+			<span title="Hard arrangement" class="difficulty d-hard">H</span>
+		</td>
+		<td style="text-align:right;" class=" ">
+			<span title="299"></span>19.99
+			</td>
+		
+	</tr>
+		</table>
+
+<hr>
+<center>
+</div>
+</div>
 </div>
 
  
